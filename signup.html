@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+        <input type="submit" value="Sign Up" onclick="store()">
+    </form>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+<!-- <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.querySelector('#username').value;
+        const password = document.querySelector('#password').value;
+        const confirmPassword = document.querySelector('#confirm-password').value;
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+        } else {
+            alert("Sign Up Successful.");
+            window.location.href = '../index.html';
+        }
+        });
+</script>
+     -->
+</script>
+</html>
